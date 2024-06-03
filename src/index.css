@@ -1,0 +1,505 @@
+@import "https://cdn.jsdelivr.net/npm/bulma@1.0.0/css/bulma.min.css";
+
+
+
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  /* width: 99%; */
+}
+
+
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+#profile{
+  margin-left: 30%;
+}
+
+@keyframes colorChange {
+  0% { color: blue; }
+  50% { color: red; }
+  100% { color: blue; }
+}
+
+.styled-marquee {
+  font-size: 20px;
+  font-family: Arial, sans-serif;
+  background-color: lightgrey;
+  padding: 10px;
+  font-weight: bolder;
+  animation: colorChange 5s infinite; /* Adjust the time as needed */
+}
+
+
+.fonth4{
+  margin-top: 50px;
+  margin-left: 440px;
+  font-family: 'Times New Roman', Times, serif;
+}
+
+
+#AddArtist{
+  margin-top: 13%;
+  margin-left: 90%;
+}
+
+#addArt{
+  width: 40%;
+  margin-left: 35%;
+}
+
+#form{
+  width: 50%;
+  margin-left: 100px; 
+}
+#Heading{
+  color: white;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+
+  /* margin-left: 10%; */
+  /* margin-right: 10%; */
+}
+
+#nav1R{
+  color: white;
+  background-color: #cd853f;
+  height: 40px;
+}
+
+#nav1{
+  color: white;
+  background-color: #cd853f;
+}
+
+#show{
+  margin-left: 65%;
+  /* width: 17%; */
+  border-radius: 50%;
+}
+
+
+#Iconlist{
+  margin-top: 50px;
+  justify-content: space-between;
+ 
+}
+
+#logo{
+  margin-left: 45px;
+  border: 5px solid black;
+  border-radius: 50%;
+  padding: 10px;
+
+}
+
+#cusD{
+  margin-top: 5%;
+}
+
+/* **********************************************************/
+
+
+.payment-modal {
+  position: fixed;
+  margin-bottom: 10%;
+  /* margin-left: 400px; */
+  left: 0;
+  width: 50%;
+  height: 50%;
+  background-color: rgba(0, 0, 0, 0.5); /* semi-transparent background */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 5%;
+}
+
+.payment-modal1{
+  position: fixed;
+  margin-bottom: 10%;
+  /* margin-left: 400px; */
+  left: 0;
+  width: 40%;
+  height: 30%;
+  background-color: rgba(0, 0, 0, 0.5); /* semi-transparent background */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 5%;
+}
+
+.modal-content {
+  background-color: white;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  
+}
+
+.modal-content1 {
+  background-color: white;
+  width: 100%;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  
+}
+
+.modal-content1 h2 {
+  margin-top: 0;
+  /* color: white; */
+}
+
+.form-group {
+  margin-bottom: 15px;
+}
+
+.form-group label {
+  display: block;
+  font-weight: bold;
+  /* color: white; */
+}
+
+.form-group input {
+  width: 100%;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.form-group input:focus {
+  outline: none;
+  border-color: #007bff; 
+}
+
+.banner{
+  background-color: #cd853f;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-weight: bold;
+}
+
+
+.quantity-button {
+ 
+  padding-bottom: 10px;
+  margin-top: 5px;
+  width: 25px;
+  height: 25px;
+  background-color: #007bff;
+  color: white;
+  border-radius: 18px;
+  cursor: pointer;
+
+  
+}
+
+.payment-modal {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+  z-index: 999; /* Ensure it appears above other content */
+}
+
+.payment-modal1{
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+  z-index: 999; /* Ensure it appears above other content */
+}
+
+.blur-background {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  backdrop-filter: blur(5px); /* Add blur effect to background */
+  z-index: 998; /* Ensure it's below the modal */
+}
+
+
+
+/* ******************************************** */
+
+.icon-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#delete{
+  margin-left: 15px;
+  padding-left: 10px;
+}
+
+#icon {
+  margin: 0 10px; /* Adjust margin as needed */
+}
+
+.icon-image {
+  width: 80px; /* Set a reduced width for the image */
+  height: auto; /* Maintain aspect ratio */
+  margin-left: 50px;
+}
+
+
+
+
+
+/* **************************************************************** */
+#IconlistArtist{
+  margin-top: 50px;
+  justify-content: space-between;
+  background-color: #d8d8d8;
+  height: 200px;
+  /* color: #cd853f; */
+}
+
+.sample{
+  color: black;
+  font-size: 15px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  margin: 0;
+}
+
+#HandwithLove{
+  /* color: white; */
+  border: 1px sol;
+}
+
+#icon{
+  margin: 0 35px;
+  /* margin-right: 50px; */
+}
+
+#bag{
+  width: 40%;
+  height: 10%;
+}
+
+#freeShipping{
+  margin-left: 10px;
+  /* margin-top: 8px; */
+  font-weight: bold;
+  
+}
+#w1{
+  margin-left: 10px;
+  /* margin-bottom: 10px; */
+}
+.icon-container {
+  display: flex;
+  align-items: center;
+}
+
+
+
+.text-wrapper {
+  display: flex; 
+ flex-direction: column; 
+ margin-top: 5px;
+}
+
+
+
+.text-wrapper p {
+  margin-bottom: -5px; 
+}
+
+#search{
+  margin-right: 30%;
+}
+
+#UserLogo{
+  color: #cd853f;
+  background-color: black;
+  width: 30%;
+  height: 40px;
+  right: 10%;
+}
+
+#p1{
+ color: white;
+
+}
+
+#p12{
+  color: white;
+  padding-top: 15px;
+  
+ }
+
+#cd{
+  max-width: 350px;
+  width: 100%;
+  padding: 25px 30px;
+  border-radius: 5px;
+  box-shadow: 0 10px 10px ;
+  margin-left: 37%;
+  margin-top: 40px;
+  
+
+}
+
+
+#user{
+  margin-top: 10%;
+  margin-right: 10%;
+  width: 30;
+  margin-left: 5%;
+}
+
+#textfield{
+  width: 70%;
+  /* text-align: center; */
+  margin-left: 50px;
+  margin-bottom: 10px;
+  margin-top: 40px;
+}
+
+/* #password{
+  margin-top: 14%;
+  margin-right: -7%;
+  margin-left: 5%;
+} */
+
+/* #pass{
+  width: 70%;
+  margin-left: 17%;
+} */
+
+#card{
+  margin-top: -50px;
+}
+
+#btn{
+  margin-top: 20px;
+  width: 70%;
+  margin-left: 15%;
+}
+
+#btnR{
+  margin-top: 20px;
+  width: 70%;
+  margin-left: 10%;
+}
+
+/* p{
+  margin-top: 10px;
+  margin-left: 15%;
+} */
+
+/* #h2{
+  margin-top: 30px;
+  margin-left: 37%;
+} */
+/* ************************************************************** */
+
+
+.image-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); 
+  grid-gap: -50%; /* Adjust the gap between grid items */
+  margin-top: 50px;
+  margin-left: 70px;
+}
+
+.image-item {
+  overflow: hidden;
+  border: 1px solid #ddd;
+  /* border-radius: 5px; */
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+  width: 50%;
+
+  /* padding: 0%; */
+}
+
+.image-item img {
+  width: 100%;
+  height: 200px; /* Adjust the height of the image as needed */
+  object-fit: cover; /* Ensure images maintain aspect ratio and cover the container */
+  
+}
+
+.image-details {
+  padding: 10px;
+}
+
+.image-details h3 {
+  margin-top: 0;
+
+}
+
+.image-details p {
+  margin: 5px 0;
+  font-size: 14px;
+  color: #666;
+}
+/* ************************************************************* */
+
+/* Cart Styles */
+.cart-container {
+  margin-top: 20px;
+}
+
+.cart-container h2 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.cart-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.cart-table th,
+.cart-table td {
+  border: 1px solid #ddd;
+  padding: 8px;
+  text-align: left;
+}
+
+.cart-table th {
+  background-color: #f2f2f2;
+}
+
+.cart-table tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+.cart-table tr:hover {
+  background-color: #ddd;
+}
+
+.cart-button {
+  display: block;
+  margin-top: 20px;
+  padding: 10px 20px;
+  background-color: #4caf50;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.buy-button:hover {
+  background-color: #45a049;
+}
